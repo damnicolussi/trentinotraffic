@@ -1,0 +1,64 @@
+.content__box a {
+    color: var(--text);
+    text-decoration: none;
+    font-weight: 600;
+}
+
+.content__box a:hover {
+    color: var(--tt-orange);
+    transition: 0.2s ease-in-out;
+}
+
+.contact__box {
+    margin-top: 5px;
+    display: flex;
+    align-items: center;
+    gap: .6rem;
+    background-color: var(--bg2);
+    width: fit-content;
+    padding: .5rem 1rem;
+    color: var(--text);
+    font-weight: 500;
+    text-decoration: none;
+    border-radius: 10px;
+}
+
+.contact__box .i {
+    display: flex;
+    align-items: center;
+}
+
+.contact__box:hover {
+    background-color: var(--main-op);
+    color: var(--tt-orange);
+    transition: all .4s ease-in-out;
+}
+
+.traffic__data {
+    padding-bottom: 2.4rem;
+}
+  
+.traffic__data__container {
+    display: flex;
+    justify-content: space-between;
+}
+
+.traffic__data__container div {
+    width: 50%;
+}
+  
+.traffic__data h1 {
+    text-align: center;
+    color: var(--tt-orange);
+    font-weight: 900;
+    font-size: 28pt;
+    line-height: 28pt;
+    margin: 0;
+    margin-top: 2.4rem;
+}
+  
+.traffic__data p {
+    text-align: center;
+    font-weight: 600;
+    margin: 0;
+}

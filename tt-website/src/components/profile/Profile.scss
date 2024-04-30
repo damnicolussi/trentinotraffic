@@ -1,0 +1,47 @@
+.profile__cnt {
+    background-color: var(--bg2);
+    width: calc((70vh - 1rem)/2);;
+    height: fit-content;
+    padding: .8rem 2rem .8rem 1rem;
+    border-radius: 0.6rem;
+    margin-top: 0.6rem;
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+.profile__cnt img {
+    width: 50px;
+    display: flex;
+    align-items: center;
+}
+  
+.profile__cnt h5 {
+    margin: 0;
+}
+  
+.profile__cnt p {
+    margin: 0;
+    font-size: small;
+}
+
+.profile_link {
+    text-decoration: none;
+    color: var(--text);
+}
+
+.profile_link:hover .profile__cnt{
+    background-color: var(--main-op);
+    transition: all .4s ease-in-out;
+}
+
+@media only screen and (max-width: 659px) {
+    .profile__cnt {
+        width: 100%;
+    }
+
+    .profile_link{
+        width: 100%;
+    }
+}
+  
