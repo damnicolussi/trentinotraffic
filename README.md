@@ -1,8 +1,8 @@
 #  <img src="tt-website/public/logos/icon.svg" width=35 /> TrentinoTraffic
 [![Static Badge](https://img.shields.io/badge/TrentinoTraffic-label?style=flat&logo=react&logoColor=white&labelColor=grey&color=orange&link=https%3A%2F%2Ftrentinotraffic.nicolussi.dev)](https://trentinotraffic.nicolussi.dev)
+![GitHub License](https://img.shields.io/github/license/damnicolussi/trentinotraffic)
 ![GitHub Repo stars](https://img.shields.io/github/stars/damnicolussi/trentinotraffic?color=green)
 ![GitHub forks](https://img.shields.io/github/forks/damnicolussi/trentinotraffic?color=green)
-![GitHub License](https://img.shields.io/github/license/damnicolussi/trentinotraffic)
 
 TrentinoTraffic is a Python script designed for real-time vehicle counting using YOLOv8 and OpenCV. It analyzes webcam frames provided by [viaggiareintrentino.it](https://www.viaggiareintrentino.it/) every 5 minutes, excluding parked vehicles to focus on the dynamic traffic flow. This project is an evolution of the original "[veicoliviaggiareintrentino](https://github.com/napo/veicoliviaggiareintrentino)" by [Maurizio Napolitano](https://github.com/napo).
 
