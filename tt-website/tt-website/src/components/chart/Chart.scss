@@ -1,0 +1,130 @@
+.graph {
+    width: 100%;
+    height: 40vh;
+    display: flex;
+    align-items: center;
+
+    .bar_cnt {
+        width: 100%;
+        height: 80%;
+        display: flex;
+        justify-content: center;
+        gap: .5rem;
+        padding: 1rem;
+    }
+
+    .bl {
+        width: 5rem;
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        justify-content: end;
+        height: 100%;
+    }
+
+    .bar {    
+        height: 100%;
+        border-radius: 5px;
+        background-color: var(--tt-dark-yellow);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        color: transparent;
+        font-weight: 600;
+    }
+
+    .value_cnt {
+        padding: 5rem 0;
+    }
+
+    .bl:hover .bar {
+        background-color: var(--tt-orange);
+        color: white;
+        min-height: 35px;
+        transition: all .3s ease-in-out;
+    }
+
+    .bl:hover .empty{
+        display: none;
+    }
+
+    .label {
+        display: flex;
+        justify-content: center;
+    }
+}
+
+.hgraph {
+    display: none;
+
+    .bar_cnt {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        gap: .5rem;
+        padding: 1rem;
+    }
+
+    .bl {
+        height: 1.6rem;
+        display: flex;
+        gap: 2rem;
+    }
+
+    .bar {
+        width: 100%;
+        border-radius: 5px;
+        background-color: var(--tt-dark-yellow);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        color: transparent;
+        font-weight: 600;
+    }
+
+    .value_cnt {
+        padding: 0 .4rem;
+    }
+
+    .bl:hover .bar {
+        background-color: var(--tt-orange);
+        color: white;
+        min-width: fit-content;
+        transition: all .3s ease-in-out;
+    }
+
+    .label {
+        width: .4rem;
+    }
+}
+
+@media only screen and (max-width: 1060px) {
+    .g-hour, .g-month {
+        display: none;
+    }
+
+    .hg-hour, .hg-month{
+        width: 100%;
+        display: block;
+    }
+
+    .graph .bl {
+        width: 4rem;
+        text-align: center;
+    }
+}
+
+@media only screen and (max-width: 659px) {
+    .graph {
+        width: 100%;
+    }
+
+    .g-hour, .g-month {
+        display: none;
+    }
+
+    .hg-hour, .hg-month {
+        width: 100%;
+        display: block;
+    }
+}

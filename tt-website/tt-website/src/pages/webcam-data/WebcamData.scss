@@ -1,0 +1,84 @@
+.frame__box {
+    width: 40%;
+    border-radius: 15px;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+}
+
+.frame__box img {
+    width: 100%;
+}
+
+.data__box {
+    width: 60%;
+    border-radius: 15px;
+}
+
+.button {
+    border: 0;
+    color: var(--tt-orange);
+    background-color: var(--main-op);
+    padding: 0.4rem 1rem;
+    border-radius: 0.4rem;
+    cursor: pointer;
+    font-weight: 600;
+    text-decoration: none;
+}
+
+.webcam__data {
+    background-color: var(--bg2);
+    width: 100%;
+    border-radius: 15px;
+    padding: 1rem;
+}
+
+.webcam__data a {
+    color: var(--text);
+    font-weight: 400;
+    text-decoration: none;
+}
+
+.vb__container {
+    display: flex;
+    justify-content: space-between;
+}
+
+.webcam__vehicles {
+    background-color: var(--bg2);
+    width: 30%;
+    border-radius: 15px;
+    padding: 1rem;
+}
+
+.vehicles {
+    font-size: 2rem;
+    font-weight: 600;
+}
+
+.webcam__back {
+    background-color: var(--bg2);
+    width: 65%;
+    border-radius: 15px;
+    padding: 1rem;
+}
+
+@media only screen and (max-width: 1060px) {
+    .frame__box {
+        width: 100%;
+    }
+    
+    .data__box {
+        width: 100%;
+    }
+  }
+  
+  @media only screen and (max-width: 659px) {
+    .frame__box {
+        width: 100%;
+    }
+    
+    .data__box {
+        width: 100%;
+    }
+  }
