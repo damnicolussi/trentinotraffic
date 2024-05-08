@@ -55,21 +55,21 @@ const Home = () => {
           <h3>Latest Data</h3>
           <div className="traffic__data__container">
             <div>
-              <h1>{data["year"][data["year"].length - 1]}</h1>
+              <h2>{data["year"][data["year"].length - 1]}</h2>
               <p>
                 Total vehicles in {labels["year"][labels["year"].length - 1]}
               </p>
             </div>
             <div>
-              <h1>{data["month"][new Date().getMonth()]}</h1>
+              <h2>{data["month"][new Date().getMonth()]}</h2>
               <p>Total vehicles in {month[new Date().getMonth()]}</p>
             </div>
           </div>
           <div>
-            <h1>
+            <h2>
               {labels["hour"][data["hour"].indexOf(Math.max(...data["hour"]))] +
                 ":00"}
-            </h1>
+            </h2>
             <p>Current peak traffic time</p>
           </div>
         </div>
