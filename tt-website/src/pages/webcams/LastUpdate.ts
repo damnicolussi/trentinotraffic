@@ -1,2 +1,2 @@
-export const LastUpdate = "01/10/2024 18:15:55"
-export const LastUpdateTS = 1727799355
+export const LastUpdate = "08/10/2024 18:16:02"
+export const LastUpdateTS = 1728404162
