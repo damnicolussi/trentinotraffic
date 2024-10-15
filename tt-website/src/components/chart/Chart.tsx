@@ -18,7 +18,11 @@ export default function Chart({ data, label, cl }: ChartProps) {
               className={value > 0 ? "bar" : "bar empty"}
               style={{ height: `calc((100% * ${value}) / ${max})` }}
             >
-              {value > 0 ? <p className="value_cnt">{value}</p> : ""}
+              {value > 0 ? (
+                <p className="value_cnt">{value.toLocaleString()}</p>
+              ) : (
+                ""
+              )}
             </div>
             <div className="label">{label[index]}</div>
           </div>

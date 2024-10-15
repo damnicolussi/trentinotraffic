@@ -55,13 +55,13 @@ const Home = () => {
           <h3>Latest Data</h3>
           <div className="traffic__data__container">
             <div>
-              <h2>{data["year"][data["year"].length - 1]}</h2>
+              <h2>{data["year"][data["year"].length - 1].toLocaleString()}</h2>
               <p>
                 Total vehicles in {labels["year"][labels["year"].length - 1]}
               </p>
             </div>
             <div>
-              <h2>{data["month"][new Date().getMonth()]}</h2>
+              <h2>{data["month"][new Date().getMonth()].toLocaleString()}</h2>
               <p>Total vehicles in {month[new Date().getMonth()]}</p>
             </div>
           </div>
