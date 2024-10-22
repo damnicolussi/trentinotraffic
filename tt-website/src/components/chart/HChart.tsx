@@ -19,7 +19,11 @@ export default function Chart({ data, label, cl }: ChartProps) {
               className="bar"
               style={{ width: `calc(((100% - 2rem) * ${value}) / ${max})` }}
             >
-              {value > 0 ? <p className="value_cnt">{value}</p> : ""}
+              {value > 0 ? (
+                <p className="value_cnt">{value.toLocaleString()}</p>
+              ) : (
+                ""
+              )}
             </div>
           </div>
         ))}

@@ -108,9 +108,16 @@
         display: block;
     }
 
-    .graph .bl {
-        width: 4rem;
-        text-align: center;
+    .g_year .bl {
+        width: auto;
+        padding: 0 10rem;
+    }
+
+    .g_hour, .g_day, .g_month {
+        .bl {
+            width: 4rem;
+            text-align: center;
+        }
     }
 }
 
